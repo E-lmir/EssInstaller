@@ -20,16 +20,16 @@ namespace EssInstaller
         {
             var text = File.ReadAllText(args[0]);
             var info = JsonConvert.DeserializeObject<InstallationInfo>(text);
-            await Task.WhenAll(Task.Run(() => ServiceProvider.Install<IdentityService>(info)),
-                Task.Run(() => ServiceProvider.Install<DocumentService>(info)),
-                Task.Run(() => ServiceProvider.Install<WebApiService>(info)),
-                Task.Run(() => ServiceProvider.Install<SchedulerService>(info)),
-                Task.Run(() => ServiceProvider.Install<SignService>(info)),
-                Task.Run(() => ServiceProvider.Install<StorageService>(info)),
-                Task.Run(() => ServiceProvider.Install<EssService>(info)),
-                Task.Run(() => ServiceProvider.Install<EssSite>(info)),
-                Task.Run(() => ServiceProvider.Install<EssCLIService>(info)),
-                Task.Run(() => ServiceProvider.Install<IdCLIService>(info)));
+            ServiceProvider.Install<IdentityService>(info);
+            ServiceProvider.Install<DocumentService>(info);
+            ServiceProvider.Install<WebApiService>(info);
+            ServiceProvider.Install<SchedulerService>(info);
+            ServiceProvider.Install<SignService>(info);
+            ServiceProvider.Install<StorageService>(info);
+            ServiceProvider.Install<EssService>(info);
+            ServiceProvider.Install<EssSite>(info);
+            ServiceProvider.Install<EssCLIService>(info);
+            ServiceProvider.Install<IdCLIService>(info);
             Console.Write("Success");
         }
     }
