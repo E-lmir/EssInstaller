@@ -1,22 +1,22 @@
 # Примечание
 Настройки в config.json для CoreMessageBroker лучше не менять, т.к получилось заставить работать только билд 1.9.25<br/>
 ### Для установки сервисов ЛК 1.9 для Rx 4.5 как минимум следует поменять следующие пункты в config.json:<br/>
-	-DBServerName,<br/>
-	-DBServerUser,<br/>
-	-DBServerPassword,<br/>
-	-SigningCertificateThumbprint,<br/>
-	-IntegrationServiceEndpoint,<br/>
-	-IntegrationServiceUser,<br/>
-	-IntegrationServicePassword,<br/>
-	-HRRepositoryPath,<br/>
-	-ESSRepositoryPath,<br/>
-	-RabbitMQ.VirtualHost<br/>
+	-DBServerName,
+	-DBServerUser,
+	-DBServerPassword,
+	-SigningCertificateThumbprint,
+	-IntegrationServiceEndpoint,
+	-IntegrationServiceUser,
+	-IntegrationServicePassword,
+	-HRRepositoryPath,
+	-ESSRepositoryPath,
+	-RabbitMQ.VirtualHost
 
  ### Для сервисов будут созданы следующие пользователи:<br/>
-  -SignServiceOperator<br/>
-  -SignServiceUser<br/>
-  -DocServiceUser<br/>
-  -EssServiceUser<br/>
+  	-SignServiceOperator
+  	-SignServiceUser
+  	-DocServiceUser
+  	-EssServiceUser
 Пароль для всех пользователей 11111<br/>
 
 # Перед установкой<br/>
