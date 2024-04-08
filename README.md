@@ -18,7 +18,7 @@
   	-DocServiceUser
   	-EssServiceUser
 Пароль для всех пользователей 11111<br/>
-Поддерживается только MSSQL<br/>
+### Поддерживается только MSSQL<br/>
 
 # Перед установкой<br/>
 Создать virtual host в RabbitMQ<br/>
