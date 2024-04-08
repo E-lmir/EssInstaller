@@ -16,7 +16,7 @@ namespace EssInstaller
 {
     internal class Program
     {
-        static async Task Main(string[] args)
+        static void Main(string[] args)
         {
             var text = File.ReadAllText(args[0]);
             var info = JsonConvert.DeserializeObject<InstallationInfo>(text);
